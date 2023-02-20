@@ -8,7 +8,7 @@ echo $Version
 src="$chromePath/Contents/Frameworks/Google Chrome Framework.framework/Versions/$Version/Frameworks/KeystoneRegistration.framework"
 dst="$chromePath/Contents/Frameworks/Google Chrome Framework.framework/Versions/$Version/Frameworks/KeystoneRegistration.framework.bak"
 if [ "$enable_update" = true ] ; then
-	sudo mv "$dst" "$src"
+	mv "$dst" "$src"
 else
-	sudo mv "$src" "$dst"
+	mv "$src" "$dst"
 fi 
